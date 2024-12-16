@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: iching-backend
+    environment:
+      - OPENAI_API_KEY=
+      - RUNWAY_API_KEY=
+    ports:
+      - "8080:8080"
